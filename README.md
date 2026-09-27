@@ -271,19 +271,4 @@ Type one of these National IDs and press **Find** to load an existing patient:
 
 ---
 
-##  Team
-
-| Name | Role |
-|---|---|
-| **Amira Ayman** | Developer |
-| **Batool Maher** | Developer |
-| **Mayer Raoof** | Developer |
-
-
-**Université Française d'Égypte** — Software Engineering & Database Systems, 2024/2025
-
----
-
-##  License
-
 This project is licensed under the [MIT License](LICENSE).
