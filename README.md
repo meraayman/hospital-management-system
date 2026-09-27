@@ -17,7 +17,7 @@
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 - [About the Project](#-about-the-project)
 - [Features](#-features)
@@ -32,7 +32,7 @@
 
 ---
 
-## 🏥 About the Project
+##  About the Project
 
 **MBA Hospital** is a Hospital Management System (HMS) built as a second-year mini project for the
 **Software Engineering** and **Database Systems** courses at the **Université Française d'Égypte (UFE)**, academic year 2024/2025.
@@ -47,19 +47,19 @@ The UI was designed first in [Figma](https://www.figma.com/design/WRiPupgko0Fyry
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication
+###  Authentication
 - Role selection screen (Doctor / Receptionist)
 - Login is checked **only against the selected role** (a receptionist can't log in through the Doctor screen)
 - Passwords are stored as **SHA-256 hashes**, never in plain text; the password field is masked
 - Logout returns to the role selection screen, and you can log in again as anyone
 
-### 👨‍⚕️ Doctor Interface
+###  Doctor Interface
 - Each doctor sees **only their own** appointments
 - Switch between **Today's Appointments** and **All Appointments**
 
-### 🧾 Receptionist Interface
+###  Receptionist Interface
 - Browse doctors by specialization (loaded from the database) and see their shifts
 - Double-click a shift to **book a real appointment**:
   - pick a date and a free **30-minute slot** — booked or past slots are hidden automatically
@@ -71,7 +71,7 @@ The UI was designed first in [Figma](https://www.figma.com/design/WRiPupgko0Fyry
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -83,7 +83,7 @@ The UI was designed first in [Figma](https://www.figma.com/design/WRiPupgko0Fyry
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 hospital-management-system/
@@ -105,7 +105,7 @@ hospital-management-system/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -138,7 +138,7 @@ mysql -u root -p < database.sql
 Or open `database.sql` in **MySQL Workbench** and run it (⚡).
 This creates the `hospital` database with all tables and sample data.
 
-> ⚠️ The script drops and recreates the `hospital` database, so re-running it resets all data.
+>  The script drops and recreates the `hospital` database, so re-running it resets all data.
 
 ### 4. Configure the database connection
 
@@ -161,12 +161,12 @@ python Choose.py
 
 ---
 
-## 👤 Demo Accounts
+##  Demo Accounts
 
 `database.sql` creates these ready-to-use accounts. On the first screen, choose the **matching role**
 before logging in, because a doctor account won't work on the Receptionist login and vice versa.
 
-### 👨‍⚕️ Doctors
+###  Doctors
 
 | Name | Specialization | Username | Password |
 |---|---|---|---|
@@ -174,7 +174,7 @@ before logging in, because a doctor account won't work on the Receptionist login
 | Dr. Emily Davis | Neurology | `emilydavis` | `securepass456` |
 | Dr. Michael Brown | Dentistry | `michaelbrown` | `mypassword789` |
 
-### 🧾 Receptionists
+###  Receptionists
 
 | Name | Username | Password |
 |---|---|---|
@@ -183,7 +183,7 @@ before logging in, because a doctor account won't work on the Receptionist login
 | Chloe Taylor | `chloetaylor` | `chloe789pass` |
 | David Wilson | `davidwilson` | `david2023pwd` |
 
-### 🧑 Sample Patients
+###  Sample Patients
 
 Type one of these National IDs and press **Find** to load an existing patient:
 
@@ -194,7 +194,7 @@ Type one of these National IDs and press **Find** to load an existing patient:
 | Liam Johnson | `543216789` |
 | Olivia Brown | `112358132` (already staying in room 101) |
 
-### ✅ Quick Test Checklist
+###  Quick Test Checklist
 
 1. Choose **Doctor** and log in as `johnsmith`. You should see only Dr. Smith's appointments.
 2. Log out, choose **Doctor** again and try `alicecarter`. The login should be rejected, since she is a receptionist.
@@ -204,12 +204,12 @@ Type one of these National IDs and press **Find** to load an existing patient:
 6. Go to **Rooms**, double-click room **102**, find patient `987654321` and press **Reserve**. Then select her in the table and press **Discharge**.
 7. Log out, log in as `johnsmith` again, and open **All Appointments** to confirm the new booking appears.
 
-> ⚠️ These are demo credentials for local testing only. Passwords are stored as SHA-256 hashes in the database.
+>  These are demo credentials for local testing only. Passwords are stored as SHA-256 hashes in the database.
 > Re-running `database.sql` resets all data back to these samples.
 
 ---
 
-## 📐 System Design
+##  System Design
 
 ### Entity Relationship Diagram
 <p align="center"><img src="docs/diagrams/erd.jpg" alt="ERD" width="80%"></p>
@@ -232,7 +232,7 @@ Type one of these National IDs and press **Find** to load an existing patient:
 > The diagrams below show the original design from the SRS.
 
 <details>
-<summary><b>📊 More UML diagrams (click to expand)</b></summary>
+<summary><b> More UML diagrams (click to expand)</b></summary>
 
 #### Use Case Diagram
 <p align="center"><img src="docs/diagrams/use-case-diagram.jpg" alt="Use case diagram" width="80%"></p>
@@ -256,7 +256,7 @@ Type one of these National IDs and press **Find** to load an existing patient:
 
 ---
 
-## 🧭 Known Limitations & Future Work
+##  Known Limitations & Future Work
 
 - [x] Role-specific login
 - [x] Doctors only see their own appointments
@@ -271,7 +271,7 @@ Type one of these National IDs and press **Find** to load an existing patient:
 
 ---
 
-## 👥 Team
+##  Team
 
 | Name | Role |
 |---|---|
@@ -279,11 +279,11 @@ Type one of these National IDs and press **Find** to load an existing patient:
 | **Batool Maher** | Developer |
 | **Mayer Raoof** | Developer |
 
-**Supervised by:** Dr. Sherin Mousa & Dr. Yara Maher
+
 **Université Française d'Égypte** — Software Engineering & Database Systems, 2024/2025
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the [MIT License](LICENSE).
